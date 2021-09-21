@@ -1,0 +1,56 @@
+body{
+    background-image: url("desert.jpg");
+    background-size: cover;
+}
+
+#automata{
+    width: 500px;
+    height: 700px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#uditok{
+    background-color: lightskyblue;
+    width: 300px;
+    height: 700px;
+    float: left;
+}
+#kezelo{
+    width: 197px;
+    height: 700px;
+    background-color: darkgray;
+    float: right;
+}
+#kijelzo{
+    position: relative;
+    top: 20px;
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    margin: auto;
+}
+#gombok{
+    width: 80%;
+    min-height: 50px;
+    background-color: rgb(114, 114, 114);
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+#kiado{
+    position: relative;
+    width: 50%;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+    top: 350px;
+}
+
+#gombok button{
+    width: calc(100% / 3);
+    height: 40px;
+}
