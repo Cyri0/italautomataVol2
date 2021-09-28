@@ -54,6 +54,14 @@ body{
     background-color: black;
     margin: auto;
     top: 350px;
+    overflow: hidden;
+}
+
+#kiado img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
 
 #gombok button{
@@ -75,4 +83,17 @@ body{
     font-size: 16px;
     text-align: center;
     margin: 0px;
+}
+
+.money{
+
+    line-height: 50px;
+    margin: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+
 }

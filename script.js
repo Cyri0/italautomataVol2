@@ -1,12 +1,15 @@
 const gombok = document.getElementById("gombok")
 const kijelzo = document.getElementById("kijelzo")
 const udito_tarolo = document.getElementById("uditok")
+const kiado = document.getElementById("kiado")
+
+const money = document.getElementById("money")
 
 for(let i = 9; i >= 0; i--){
     gombok.innerHTML += '<button onclick="numberPressed('+i+')">'+i+'</button>'
 }
 gombok.innerHTML += '<button id="clearbtn" onclick="clearPressed()">C</button>'
-gombok.innerHTML += '<button id="kiadbtn">Kiad</button>'
+gombok.innerHTML += '<button id="kiadbtn" onclick="giveMe()">Kiad</button>'
 
 
 
@@ -35,4 +38,31 @@ for(let i = 0; i < uditok.length; i++){
         <h3>${uditok[i].ar} Ft</h3>
     </div>
     `
+}
+
+
+
+function buy(i){
+    kiado.innerHTML = `<img src="${uditok[i].kep}">`;
+    clearPressed();
+    money.innerHTML = money.innerHTML - uditok[i].ar;
+}
+
+function kiir(szoveg){
+    kijelzo.innerHTML = szoveg;
+}
+
+function giveMe(){
+    let kod = kijelzo.innerHTML;
+    for(let i = 0; i < uditok.length; i++){
+        if(uditok[i].kod == kod){
+            if(uditok[i].ar <= money.innerHTML){
+                buy(i);
+                return;
+            }
+            kiir('Csóri vagy')
+            return;
+        }
+    }
+    kiir("Elfogyott");
 }
