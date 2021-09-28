@@ -32,6 +32,12 @@ body{
     height: 50px;
     background-color: black;
     margin: auto;
+
+    color: lightgreen;
+    line-height: 50px;
+    font-size: 24px;
+    padding: 0px 10px;
+    text-align: right;
 }
 #gombok{
     width: 80%;
@@ -53,4 +59,20 @@ body{
 #gombok button{
     width: calc(100% / 3);
     height: 40px;
+}
+
+.udito{
+    width: calc(100% / 3);
+    overflow: hidden;
+    float: left;
+}
+
+.udito img {
+    width: 100%;
+}
+
+.udito h2, .udito h3 {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
 }
